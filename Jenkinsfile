@@ -22,11 +22,11 @@ pipeline {
                     ssh -i $SSH_CRED -t -o StrictHostKeyChecking=no ubuntu@15.223.5.96 << EOF
 //                     sudo mkdir dummy-blog
                     cd dummy-blog
-		    sudo git clone https://github.com/tolaoguntunde/dummy-blog.git .
+// 		    sudo git clone https://github.com/tolaoguntunde/dummy-blog.git .
 //                     sudo apt install npm -y
 //                     sudo apt install nodejs -y
                     npm install
-                    npm i -D --save-exact mini-css-extract-plugin@2.4.5 -y
+                    npm i -D --save-exact mini-css-extract-plugin@2.4.5
                     npm run build
                     sudo cp -r build /var/www/
                     echo "exiting server terminal"
