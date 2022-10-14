@@ -27,7 +27,7 @@ pipeline {
 //                     sudo apt install nodejs -y
                     npm install
                     npm i -D --save-exact mini-css-extract-plugin@2.4.5 -y
-                    npm build
+                    npm run build
                     sudo cp -r build /var/www/
                     echo "exiting server terminal"
                     exit
