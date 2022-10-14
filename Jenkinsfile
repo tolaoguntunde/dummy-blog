@@ -19,7 +19,7 @@ pipeline {
                     sh """
                     #!/bin/bash
 		            echo "connecting to remote or deploy server"	
-                    ssh -i $SSH_CRED -t -o StrictHostKeyChecking=no ubuntu@15.223.5.96 << EOF
+                    ssh -i $SSH_CRED -t -o StrictHostKeyChecking=no ubuntu@99.79.66.58 << EOF
                     sudo mkdir dummy-blog
                     cd dummy-blog
 		    sudo git clone https://github.com/tolaoguntunde/dummy-blog.git .
