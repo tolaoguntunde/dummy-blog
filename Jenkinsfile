@@ -29,7 +29,7 @@ pipeline {
                     sudo npm i -D --save-exact mini-css-extract-plugin@2.4.5
                     sudo npm run build
                     sudo cp -r build /var/www/
-                    echo "exiting server terminal"
+                    echo "exiting terminal"
                     exit
                     << EOF
                     """
